@@ -25,7 +25,7 @@ body {
     height:100%;
     /*font-family:'Eczar'*/
     /*font-family:'roboto slab';*/
-    font-family:'poppins';
+    font-family:'poppins', sans-serif;
     /*font-family:'BioRhyme'*/
     
 }
@@ -154,8 +154,8 @@ h2 {
     display:flex;
     justify-content:center;
     color:#f2f2f2;
-    text-decoration:underline;
     font-size:2em;
+    text-decoration:underline;
 }
 
 .menuoption {
@@ -163,7 +163,7 @@ h2 {
     flex-direction:column;
 }
 
-.menu-btn {
+/*.menu-btn {
     margin:10px 25%;
     padding:5px;
     text-align:left;
@@ -171,13 +171,49 @@ h2 {
     background-color:red;
     color:#f2f2f2;
     font-family: 'Poppins', sans-serif;
-}
-.menucontent {
+}*/
+/*.menucontent {
     
     flex-direction:column;
     text-align:center;
     padding:10px 5px;
     color:#f2f2f2;
     gap:10px;
-    /*border:2px solid yellow;*/
-}
+    border:2px solid yellow;*/
+
+
+.menu-btn {
+    background-color: #A8000B;
+    color: #f2f2f2;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 1em;
+    font-family:'Poppins', sans-serif;
+    text-decoration:underline;
+  }
+
+  .active, .menu-btn:hover {
+    background-color: #F50112;
+  }
+
+  .menucontent {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f2f2f2;
+  }
+
+  .menu-btn:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 1em;
+    float:left;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    float:right;
+  }
