@@ -52,6 +52,11 @@ header li {
     font-size:1em;
 }
 
+header a {
+    text-decoration:none;
+    color:#f2f2f2;
+}
+
 .contact {
     text-align:center;
     background-color:rgba(0, 0, 0, 0.4);
@@ -118,18 +123,21 @@ h1 {
     font-weight:400;
     border:2px solid #f2f2f2;
 }
+
+
 #onlineorder {
     background-color:#A8000B;
 }
 
-#specials {
-    background-color:/*#F5EF18*/
-    /*#18A7F5*/
-    #0870A8
-}
 
 #callahead {
     background-color:#A8000B;
+}
+
+.btns:hover {
+    cursor:pointer;
+    color:black;
+
 }
 
 /*.menu-container {
@@ -207,6 +215,7 @@ h2 {
     background-color: #f2f2f2;
   }
 
+
   .menu-btn:after {
     content: '\02795'; /* Unicode character for "plus" sign (+) */
     font-size: 1em;
@@ -216,4 +225,8 @@ h2 {
   .active:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
     float:right;
+  }
+
+  .itemtitle {
+    font-weight:bold;
   }

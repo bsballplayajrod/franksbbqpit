@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Frank's BBQ Pit</title>
+        <title>Frank's BBQ Pit - Home</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
+        
     </head>
     <body>
         <div class="background">
@@ -18,7 +19,7 @@
                         </div>
                         <div class="nav">
                             <ul>
-                                <li>HOME</li>
+                                <a href="index.html"><li>HOME</li></a>
                                 <li>MENU</li>
                                 <li>CATERING</li>
                             </ul>
@@ -37,8 +38,8 @@
                            </div>
                     
                             <div class="main-btns">
-                                <button class="btns" id="onlineorder">ONLINE ORDERS</button>
-                                <button class="btns" id="callahead">RESERVATIONS</button>
+                                <button class="btns" id="onlineorder" onclick="buttonOutOfOrderAlert()">ONLINE ORDERS</button>
+                                <button class="btns" id="callahead" onclick="buttonOutOfOrderAlert()">RESERVATIONS</button>
                             </div>
                     </div>    
                         <div class="menu-container">
@@ -50,24 +51,50 @@
                                 <button type="button" type="button" class="menu-btn">Appetizers</button>
                                 <div class="menucontent">
                                     <div>
-                                        <p>ITEM 1</p>
-                                        <p>$35</p>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">BBQ SKEWERS</p>
+                                        <p>$13.95</p>
+                                        <p><em>Available in Steak, Chicken, Pork, Shrimp, or Veggie</em></p>
                                     </div>
                                     <div>
-                                        <p>ITEM 2</p>
-                                        <p>$35</p>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">MAC N' CHEESE BITES</p>
+                                        <p>$9.95</p>
+                                        <p><em>Fried stuffed mac n' cheese</em></p>
                                     </div>
                                     <div>
-                                        <p>ITEM 3</p>
-                                        <p>$35</p>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">FRIED CATFISH NUGGETS</p>
+                                        <p>$9.95</p>
+                                        <p><em>Catfish nuggets that have been beer-battered and deep-fried</em></p>
                                     </div>
                                     <div>
-                                        <p>ITEM 4</p>
-                                        <p>$35</p>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">BBQ FRIES</p>
+                                        <p>$12.95</p>
+                                        <p><em>Seasoned french fries topped with shredded BBQ pork and drizzled with our house BBQ sauce</em></p>
+                                    </div>
+                                    <div>
+                                        <table>
+                                            <thead>
+                                                <td class="itemtitle">CHICKEN WINGS</td>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>10 PCS</td>
+                                                    <td>$12.95</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>20 PCS</td>
+                                                    <td>$16.95</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>40 PCS</td>
+                                                    <td>$35.95</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>75 PCS</td>
+                                                    <td>$60.95</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <p><em>Available in Hot BBQ, House BBQ, Sweet BBQ, Buffalo, Spicy Garlic, Lemon Pepper and Plain </em></p>
                                     </div>
                                 </div>
                             </div>
@@ -75,48 +102,51 @@
                                 <button type="button" type="button" class="menu-btn">Steaks & Ribs</button>
                                 <div class="menucontent">
                                     <div>
-                                        <p>ITEM 1</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p><em>Choice of 2 sides for all steak and rib platters</em></p>
                                     </div>
                                     <div>
-                                        <p>ITEM 2</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">SIRLOIN</p>
+                                        <span>$12.95</span>
+                                        <p><em>Available in 6oz, 8oz (+$1.95) or 10oz (+$3.95)</em></p>
                                     </div>
                                     <div>
-                                        <p>ITEM 3</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">RIBEYE</p>
+                                        <span>$18.95</span>
+                                        <p><em>Available in 10oz and 16oz (+$3.95)</em></p>
                                     </div>
                                     <div>
-                                        <p>ITEM 4</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">HALF RACK OF RIBS</p>
+                                        <span>$9.95</span>
+                                        <p><em>Half rack of ribs in House BBQ sauce</em></p>
+                                    </div>
+                                    <div>
+                                        <p class="itemtitle">FULL RACK OF RIBS</p>
+                                        <span>$16.95</span>
+                                        <p><em>Full rack of ribs in House BBQ sauce</em></p>
                                     </div>
                             </div>
                             <div class="menuoption">
                                 <button type="button" class="menu-btn">Burgers</button>
                                 <div class="menucontent">
                                     <div>
-                                        <p>ITEM 1</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">FRANK'S CHEESEBURGER</p>
+                                        <span>$9.95</span>
+                                        <p><em>Topped with lettuce, tomato, pickle and onion. Choice of cheese: American, Cheddar, Pepperjack, and White Cheddar. House chili served on the side</em></p>
                                     </div>
                                     <div>
-                                        <p>ITEM 2</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">WESTERN BBQ CHEESEBURGER</p>
+                                        <span>$10.95</span>
+                                        <p><em>Topped with fried onion rings and House BBQ sauce</em></p>
                                     </div>
                                     <div>
-                                        <p>ITEM 3</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">PEPPERED BACON CHEESEBURGER</p>
+                                        <span>$12.95</span>
+                                        <p><em>Topped with pepper jack cheese, lettuce, tomato, House BBQ sauce, and 3 strips of peppered bacon</em></p>
                                     </div>
                                     <div>
-                                        <p>ITEM 4</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">THE HOT ONE</p>
+                                        <span>$13.95</span>
+                                        <p><em>Our spiciest item! Burger topped with pepperjack cheese, jalapenos, green chili, and served open-faced with a side of Ghost Pepper sauce</em></p>
                                     </div>
                                 </div>
                             </div>
@@ -124,24 +154,27 @@
                                 <button type="button" class="menu-btn">Chicken</button>
                                 <div class="menucontent">
                                     <div>
-                                        <p>ITEM 1</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p><em>All burgers come with a side of seasoned fries</em></p>
                                     </div>
                                     <div>
-                                        <p>ITEM 2</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">HALF BBQ CHICKEN</p>
+                                        <span>$14.95</span>
+                                        <p><em>Half chicken smothered in House BBQ sauce</em></p>
                                     </div>
                                     <div>
-                                        <p>ITEM 3</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">BBQ CHICKEN SLIDERS</p>
+                                        <span>$12.95</span>
+                                        <p><em>3 Chicken Sliders covered in House BBQ sauce</em></p>
                                     </div>
                                     <div>
-                                        <p>ITEM 4</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">KICKIN' CHICKEN</p>
+                                        <span>$11.95</span>
+                                        <p><em>Chicken sandwich topped with House BBQ sauce, jalapenos, and pepperjack cheese</em></p>
+                                    </div>
+                                    <div>
+                                        <p class="itemtitle">FULL BBQ CHICKEN</p>
+                                        <span>$17.95</span>
+                                        <p><em>Full chicken topped with House BBQ sauce</em></p>
                                     </div>
                                 </div>
                             </div>
@@ -149,99 +182,100 @@
                                 <button type="button" class="menu-btn">Sides</button>
                                 <div class="menucontent">
                                     <div>
-                                        <p>ITEM 1</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p><em>Ala Carte $5.95</em></p>
+                                        <p>Fried Okra</p>
+                                        <p>Hush Puppies</p>
+                                        <p>Coleslaw</p>
+                                        <p>Potato Salad</p>
+                                        <p>Seasoned Fries</p>
+                                        <p>Collard Greens</p>
+                                        <p>Baked Beans</p>
+                                        <p>Corn Bread</p>
+                                        <p>Mashed Potatoes</p>
                                     </div>
-                                    <div>
-                                        <p>ITEM 2</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
-                                    </div>
-                                    <div>
-                                        <p>ITEM 3</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
-                                    </div>
-                                    <div>
-                                        <p>ITEM 4</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
-                                    </div>
+                                        
                                 </div>
                             </div>
                             <div class="menuoption">
                                 <button type="button" class="menu-btn">Soups & Salads</button>
                                 <div class="menucontent">
                                     <div>
-                                        <p>ITEM 1</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">SOUP OF THE DAY</p>
+                                        <span>$4.95</span>
+                                        <p><em>Available in a cup or bowl</em></p>
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Monday</td>
+                                                    <td>Chicken Noodle</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tuesday</td>
+                                                    <td>Chicken Chili</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Wednesday</td>
+                                                    <td>Beef Chili</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Thursday</td>
+                                                    <td>Jumbo Gumbo</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Friday</td>
+                                                    <td>BBQ Chicken & Beans</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Saturday</td>
+                                                    <td>Broccoli Cheddar</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sunday</td>
+                                                    <td>Frank's Choice</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                     <div>
-                                        <p>ITEM 2</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">HOUSE SALAD</p>
+                                        <span>$4.95</span>
+                                        <p><em>Dressings: Ranch, Italian, Bleu Cheese, Honey Mustard, Thousand Island</em></p>
                                     </div>
                                     <div>
-                                        <p>ITEM 3</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">CAESAR SALAD</p>
+                                        <span>$5.95</span>
+                                        <p><em>Grilled chicken ($1.95)</em></p>
                                     </div>
                                     <div>
-                                        <p>ITEM 4</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="menuoption">
-                                <button type="button" class="menu-btn">Kids</button>
-                                <div class="menucontent">
-                                    <div>
-                                        <p>ITEM 1</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
-                                    </div>
-                                    <div>
-                                        <p>ITEM 2</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
-                                    </div>
-                                    <div>
-                                        <p>ITEM 3</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
-                                    </div>
-                                    <div>
-                                        <p>ITEM 4</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">BBQ CHICKEN SALAD</p>
+                                        <span>$5.95</span>
+                                        <p><em>BBQ chicken pieces, black beans and corn</em></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="menuoption">
                                 <button type="button" class="menu-btn">Beverages</button>
                                 <div class="menucontent">
+                                    <p><em>Free Refills</em></p>
                                     <div>
-                                        <p>ITEM 1</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">SODA</p>
+                                        <span>$2.95</span>
+                                        <p><em>Coke and Pepsi products available</em></p>
                                     </div>
                                     <div>
-                                        <p>ITEM 2</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">LEMONADE</p>
+                                        <span>$2.95</span>
+                                        <p><em>Try with our mango, strawberry or blueberry flavoring</em></p>
                                     </div>
                                     <div>
-                                        <p>ITEM 3</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">ICED TEA</p>
+                                        <span>$2.95</span>
+                                        <p><em>Sweet tea available per request</em></p>
                                     </div>
                                     <div>
-                                        <p>ITEM 4</p>
-                                        <span>$35</span>
-                                        <p><em>Description...description...description...</em></p>
+                                        <p class="itemtitle">COFFEE</p>
+                                        <span>$1.95</span>
+                                        <p><em>Available Hot or Cold</em></p>
                                     </div>
                                 </div>
                             </div>
