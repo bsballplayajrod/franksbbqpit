@@ -219,13 +219,13 @@ h2 {
 
 
   .menu-btn:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: '+'; /* Unicode character for "plus" sign (+) \02795*/
     font-size: 1em;
     float:left;
   }
   
   .active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    content: "-"; /* Unicode character for "minus" sign (-) \02796*/
     float:right;
   }
 
