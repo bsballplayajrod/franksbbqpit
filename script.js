@@ -32,39 +32,6 @@ sides  fried okra 5.75
         corn bread
         mashed potatoes
 
-bbq chicken dinner 17.95
-1/2 BBQ Chicken
-
-Ribs 19.95
-five beef ribs
-
-pork ribs 
-
-Hot Links 15.99
-
-
-desserts
-choc pudding pound cake 5.85
-rich and moist chocolate cake
-
-peach cobbler 6.85
-sweet ripe peaches topped with a flakey crust
-
-Sweet potato pie 6.85
-made with a buttery flakey crust and creamy filling
-
-ice cream 3.50 vanilla choc strawberry
-
-
-coke
-dr pepper
-diet coke
-sprite
-lemonade
-unsweet tea
-fanta
-rootbeer
-1.95
 
 
 The Pup Package - 13.50
