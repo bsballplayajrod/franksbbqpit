@@ -20,8 +20,8 @@
                         <div class="nav">
                             <ul>
                                 <a href="index.html"><li>HOME</li></a>
-                                <li>MENU</li>
-                                <li>CATERING</li>
+                                <a href="#menu"><li>MENU</li></a>
+                                <a href="/catering/index.html"><li>CATERING</li></a>
                             </ul>
                         </div>
                     </header>
@@ -45,7 +45,7 @@
                         <div class="menu-container">
                             <img id="main-logo" src="frankslogo.png">
                             <div>
-                                <h2>Menu</h2>
+                                <h2 id="menu">Menu</h2>
                             </div>
                             <div class="menuoption">
                                 <button type="button" type="button" class="menu-btn">Appetizers</button>
@@ -129,6 +129,9 @@
                                 <button type="button" class="menu-btn">Burgers</button>
                                 <div class="menucontent">
                                     <div>
+                                        <p><em>All burgers come with a side of seasoned fries</em></p>
+                                    </div>
+                                    <div>
                                         <p class="itemtitle">FRANK'S CHEESEBURGER</p>
                                         <span>$9.95</span>
                                         <p><em>Topped with lettuce, tomato, pickle and onion. Choice of cheese: American, Cheddar, Pepperjack, and White Cheddar. House chili served on the side</em></p>
@@ -153,9 +156,6 @@
                             <div class="menuoption">
                                 <button type="button" class="menu-btn">Chicken</button>
                                 <div class="menucontent">
-                                    <div>
-                                        <p><em>All burgers come with a side of seasoned fries</em></p>
-                                    </div>
                                     <div>
                                         <p class="itemtitle">HALF BBQ CHICKEN</p>
                                         <span>$14.95</span>
@@ -280,13 +280,24 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="disclosure">
+                            <p><em>These Items may be served raw or undercooked, or contain raw or undercooked ingridients. Consuming raw or 
+                                undercooked meats, poultry, seafood, 
+                                shellfish or eggs may increase your 
+                                risk of foodborne illness</em></p>
+                        </div>
                         <div class="rewards">
                             <h3>Join our rewards program!</h3>
-                            <input type="email" placeholder="Enter Email....">
+                            <input class="emailinput" type="email" placeholder="Enter Email....">
+                            <button onclick="buttonOutOfOrderAlert()"class="submit-btn" type="submit">SUBMIT</button>
                         </div>
                         <div class="catering">
                             <h3>Event Catering</h3>
-                            <button>See Our Menu</button>
+                            <p>Company Party?</p> 
+                            <p>Birthday?</p> 
+                            <p>Anniversary?</p>
+                            <p>Let us take care of your next special occasion!</p>
+                            <a href="/catering/index.html"><button>SEE OUR MENU</button></a>
                         </div>    
             <footer>
                 <ul>
@@ -296,7 +307,7 @@
                     <li>Our Story</li>
                     <li>Franchising</li>
                 </ul>
-                <h5>&COPY 2022 FRANKLIN ENTERPRISES LLC</h5>
+                <h5>&COPY 2022 JNORDDESIGN</h5>
                 <ul>
                     <li>TERMS & CONDITIONS</li>
                     <li>SITEMAP</li>

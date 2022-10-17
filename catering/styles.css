@@ -1,0 +1,115 @@
+/* dark red #A8000B
+    red #F50112
+    medium red #FF1929
+    yellow #F5EF18
+    lighter blue #18A7F5
+    dark blue #0870A8*/
+
+    @import url('https://fonts.googleapis.com/css2?family=BioRhyme:wght@300;400;700&family=Eczar:wght@400;500;700&family=Poppins:ital,wght@0,300;0,400;0,700;1,300&family=Roboto+Slab:wght@400;600;700&display=swap');
+   /* font-family: 'BioRhyme', serif;
+   font-family: 'Eczar', serif;
+   font-family: 'Roboto Slab', serif;
+   font-family:'Poppins', sans serif
+   */
+
+
+* {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body {
+    margin:0 auto;
+    background-color:#A8000B;
+    height:100%;
+    /*font-family:'Eczar'*/
+    /*font-family:'roboto slab';*/
+    font-family:'poppins', sans-serif;
+    /*font-family:'BioRhyme'*/
+    
+}
+
+header {
+    background-color:#A8000B;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    color:#f2f2f2;
+    margin:0 auto;
+}
+
+header ul {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+header li {
+    display:flex;
+    list-style:none;
+    justify-content:center;
+    padding:15px;
+    font-size:1em;
+}
+
+header a {
+    text-decoration:none;
+    color:#f2f2f2;
+}
+
+
+.logo {
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+header img {
+    height:100px;
+    width:100px;
+}
+
+
+.main {
+    height:100vh;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    color:#f2f2f2;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+  .disclosure {
+    color:#f2f2f2;
+    margin:5px;
+    text-align:center;
+    font-size:0.75em;
+  }
+
+  .rewards {
+    color:#f2f2f2;
+    font-family:'Poppins', sans-serif;
+    height:75px;
+    margin-top:50px;
+    text-align:center;
+    background-color:rgba(0, 0, 0, 0.4);
+  }
+
+  .emailinput {
+    border:2px solid #f50112;
+    background-color:#f2f2f2;
+  }
+  .submit-btn {
+    color:#f2f2f2;
+    background-color:#F50112;
+    font-family:'Poppins', sans-serif;
+    padding:0 5px;
+    font-weight:bolder;
+    border:2px solid #f50112;
+    margin-left:5px;
+  }

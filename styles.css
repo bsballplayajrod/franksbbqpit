@@ -127,11 +127,13 @@ h1 {
 
 #onlineorder {
     background-color:#A8000B;
+    font-weight:bolder;
 }
 
 
 #callahead {
     background-color:#A8000B;
+    font-weight:bolder;
 }
 
 .btns:hover {
@@ -163,7 +165,6 @@ h2 {
     justify-content:center;
     color:#f2f2f2;
     font-size:2em;
-    text-decoration:underline;
 }
 
 .menuoption {
@@ -202,6 +203,7 @@ h2 {
     font-size: 1em;
     font-family:'Poppins', sans-serif;
     text-decoration:underline;
+    font-weight:bolder;
   }
 
   .active, .menu-btn:hover {
@@ -229,4 +231,74 @@ h2 {
 
   .itemtitle {
     font-weight:bold;
+  }
+
+  .disclosure {
+    color:#f2f2f2;
+    margin:5px;
+    text-align:center;
+    font-size:0.75em;
+  }
+
+  .rewards {
+    color:#f2f2f2;
+    font-family:'Poppins', sans-serif;
+    height:75px;
+    margin-top:50px;
+    text-align:center;
+    background-color:rgba(0, 0, 0, 0.4);
+  }
+
+  .emailinput {
+    border:2px solid #f50112;
+    background-color:#f2f2f2;
+  }
+  .submit-btn {
+    color:#f2f2f2;
+    background-color:#F50112;
+    font-family:'Poppins', sans-serif;
+    padding:0 5px;
+    font-weight:bolder;
+    border:2px solid #f50112;
+    margin-left:5px;
+    cursor:pointer;
+  }
+
+  .catering {
+    color:#f2f2f2;
+    margin:20px 10px;
+    text-align:center;
+  }
+
+  .catering h3 {
+    font-size:1.5em;
+  }
+
+  .catering button {
+    background-color:#F50112;
+    color:#f2f2f2;
+    padding:5px;
+    font-family:'Poppins', sans-serif;
+    font-weight:bolder;
+    margin-top:5px;
+    cursor:pointer;
+    border:none;
+  }
+
+  footer {
+    background-color:rgba(0, 0, 0, 0.4);
+    color: #f2f2f2;
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:center;
+    align-items:center;
+    gap:5px;
+    margin:15px 0;
+  }
+
+  footer ul {
+    list-style-type: none;
+    text-decoration:underline;
+    padding:5px;
+    cursor:pointer;
   }
